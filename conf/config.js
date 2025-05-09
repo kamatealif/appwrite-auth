@@ -1,6 +1,6 @@
 const config = {
-    appwriteEndpoint: "https://cloud.appwrite.io/v1",
-    appwriteProjectId: "<projectIdGoesHere>"
+    appwriteEndpoint: String(import.meta.env.VITE_APPWRITE_ENDPOINT),
+    appwriteProjectId: String(import.meta.env.VITE_APPWRITE_PROJECT_ID)
 }
 
 export default config
